@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  width: 228px;
+  height: 63px;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background-image: url("@/assets/images/btn-bg.png");
+  background-repeat: no-repeat;
+  font-family: "ABremenCaps";
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #52311b;
+  cursor: pointer;
+
+  &[disabled] {
+    background-image: url("@/assets/images/btn-disabled-bg.png");
+    color: #383838;
+    cursor: not-allowed;
+  }
+}
